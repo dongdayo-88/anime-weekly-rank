@@ -12,9 +12,12 @@ try:
 except Exception:  # noqa: BLE001
     _HAS_RAPIDFUZZ = False
 
+# manami DB 는 더 이상 repo 트리에 커밋되지 않고 GitHub Releases 로 배포된다.
+# 아래 'releases/latest/download/...' 영구 링크는 항상 최신 릴리스로 리다이렉트된다.
+# (requests 는 기본적으로 리다이렉트를 따라간다 → allow_redirects 별도 처리 불필요)
 MANAMI_URL = (
-    "https://raw.githubusercontent.com/manami-project/"
-    "anime-offline-database/master/anime-offline-database-minified.json"
+    "https://github.com/manami-project/anime-offline-database/"
+    "releases/latest/download/anime-offline-database-minified.json"
 )
 
 FUZZ_THRESHOLD = 90  # token_set_ratio 임계값

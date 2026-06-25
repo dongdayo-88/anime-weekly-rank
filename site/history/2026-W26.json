@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T07:02:50Z",
+  "generated_at": "2026-06-25T07:27:43Z",
   "week": "2026-W26",
   "netflix_week": "2026-06-21",
   "global": {
@@ -581,14 +581,6 @@
       "netflix": [
         {
           "rank": 1,
-          "title": "The Last Song",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 2,
           "title": "The Four Seasons",
           "anilist_id": null,
           "cover": null,
@@ -604,14 +596,6 @@
       "netflix": [
         {
           "rank": 1,
-          "title": "Sonic the Hedgehog 3",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 2,
           "title": "My Family",
           "anilist_id": null,
           "cover": null,
@@ -619,23 +603,7 @@
           "delta": "new"
         },
         {
-          "rank": 3,
-          "title": "Turbo",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 4,
-          "title": "Vacation",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 5,
+          "rank": 2,
           "title": "Viral Hit",
           "anilist_id": null,
           "cover": null,
@@ -643,23 +611,7 @@
           "delta": "new"
         },
         {
-          "rank": 6,
-          "title": "The Last Song",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 7,
-          "title": "The Little Things",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 8,
+          "rank": 3,
           "title": "Legends",
           "anilist_id": null,
           "cover": null,
@@ -683,14 +635,6 @@
         },
         {
           "rank": 2,
-          "title": "Bunny!",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 3,
           "title": "In Love Forever",
           "anilist_id": null,
           "cover": null,
@@ -698,23 +642,7 @@
           "delta": "new"
         },
         {
-          "rank": 4,
-          "title": "The Demon Prince",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 5,
-          "title": "Spectre",
-          "anilist_id": null,
-          "cover": null,
-          "url": null,
-          "delta": "new"
-        },
-        {
-          "rank": 6,
+          "rank": 3,
           "title": "Wistoria: Wand and Sword",
           "anilist_id": 174576,
           "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174576-tpKcHG0eO6CS.jpg",
@@ -730,5 +658,5 @@
     "netflix": "https://www.netflix.com/tudum/top10",
     "trends": "https://trends.google.com"
   },
-  "notes": "권역 실시청은 Netflix Top10 내 애니만 반영하며 카탈로그 한계로 누락이 있을 수 있습니다."
+  "notes": "권역 실시청은 Netflix Top10 중 TV 애니 시리즈만 반영하며 카탈로그 한계로 누락이 있을 수 있습니다."
 }

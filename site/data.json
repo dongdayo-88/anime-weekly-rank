@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-06-22T00:05:00Z",
+  "week": "2026-W26",
+  "netflix_week": "2026-06-21",
+  "global": {
+    "trending": [
+      {"rank": 1, "anilist_id": 21, "title_en": "ONE PIECE", "title_romaji": "ONE PIECE", "score": 87, "popularity": 719448, "trending": 197, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg", "url": "https://anilist.co/anime/21", "country": "JP", "delta": "new"},
+      {"rank": 2, "anilist_id": 151807, "title_en": "Solo Leveling Season 2", "title_romaji": "Ore dake Level Up na Ken Season 2", "score": 83, "popularity": 412330, "trending": 165, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg", "url": "https://anilist.co/anime/151807", "country": "KR", "delta": "+1"},
+      {"rank": 3, "anilist_id": 154587, "title_en": "Frieren: Beyond Journey's End", "title_romaji": "Sousou no Frieren", "score": 92, "popularity": 521900, "trending": 142, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-gpYz0sZHEUDb.jpg", "url": "https://anilist.co/anime/154587", "country": "JP", "delta": "-1"},
+      {"rank": 4, "anilist_id": 178025, "title_en": "Dandadan", "title_romaji": "Dandadan", "score": 85, "popularity": 298120, "trending": 121, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-K6gPFL9eIZ2K.jpg", "url": "https://anilist.co/anime/178025", "country": "JP", "delta": "new"},
+      {"rank": 5, "anilist_id": 166873, "title_en": "Jujutsu Kaisen", "title_romaji": "Jujutsu Kaisen", "score": 86, "popularity": 689000, "trending": 110, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-bbBWj4pEFseh.jpg", "url": "https://anilist.co/anime/113415", "country": "JP", "delta": "+3"},
+      {"rank": 6, "anilist_id": 176496, "title_en": "Re:ZERO Season 3", "title_romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season", "score": 81, "popularity": 245100, "trending": 98, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176496-zUJUStUWzqHv.jpg", "url": "https://anilist.co/anime/176496", "country": "JP", "delta": "-2"},
+      {"rank": 7, "anilist_id": 170942, "title_en": "Blue Lock Season 2", "title_romaji": "Blue Lock vs. U-20 Japan", "score": 76, "popularity": 198000, "trending": 87, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170942-bjUlpFnrwBxd.jpg", "url": "https://anilist.co/anime/170942", "country": "JP", "delta": "0"},
+      {"rank": 8, "anilist_id": 163132, "title_en": "Demon Slayer: Hashira Training Arc", "title_romaji": "Kimetsu no Yaiba: Hashira Geiko-hen", "score": 79, "popularity": 332000, "trending": 80, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163132-Bs1Es93Jm6e1.jpg", "url": "https://anilist.co/anime/163132", "country": "JP", "delta": "new"},
+      {"rank": 9, "anilist_id": 21459, "title_en": "My Hero Academia", "title_romaji": "Boku no Hero Academia", "score": 77, "popularity": 478000, "trending": 72, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21459-DLHO0sZmYRyq.jpg", "url": "https://anilist.co/anime/21459", "country": "JP", "delta": "-3"},
+      {"rank": 10, "anilist_id": 177709, "title_en": "Wind Breaker Season 2", "title_romaji": "Wind Breaker Season 2", "score": 78, "popularity": 121000, "trending": 65, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177709-7HRXY2t1Bz5x.jpg", "url": "https://anilist.co/anime/177709", "country": "JP", "delta": "+5"}
+    ],
+    "popularity": [
+      {"rank": 1, "anilist_id": 21, "title_en": "ONE PIECE", "title_romaji": "ONE PIECE", "score": 87, "popularity": 719448, "trending": 197, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg", "url": "https://anilist.co/anime/21", "country": "JP", "delta": "0"},
+      {"rank": 2, "anilist_id": 166873, "title_en": "Jujutsu Kaisen", "title_romaji": "Jujutsu Kaisen", "score": 86, "popularity": 689000, "trending": 110, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-bbBWj4pEFseh.jpg", "url": "https://anilist.co/anime/113415", "country": "JP", "delta": "+2"},
+      {"rank": 3, "anilist_id": 154587, "title_en": "Frieren: Beyond Journey's End", "title_romaji": "Sousou no Frieren", "score": 92, "popularity": 521900, "trending": 142, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-gpYz0sZHEUDb.jpg", "url": "https://anilist.co/anime/154587", "country": "JP", "delta": "-1"},
+      {"rank": 4, "anilist_id": 21459, "title_en": "My Hero Academia", "title_romaji": "Boku no Hero Academia", "score": 77, "popularity": 478000, "trending": 72, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21459-DLHO0sZmYRyq.jpg", "url": "https://anilist.co/anime/21459", "country": "JP", "delta": "0"},
+      {"rank": 5, "anilist_id": 151807, "title_en": "Solo Leveling Season 2", "title_romaji": "Ore dake Level Up na Ken Season 2", "score": 83, "popularity": 412330, "trending": 165, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg", "url": "https://anilist.co/anime/151807", "country": "KR", "delta": "+4"},
+      {"rank": 6, "anilist_id": 163132, "title_en": "Demon Slayer: Hashira Training Arc", "title_romaji": "Kimetsu no Yaiba: Hashira Geiko-hen", "score": 79, "popularity": 332000, "trending": 80, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163132-Bs1Es93Jm6e1.jpg", "url": "https://anilist.co/anime/163132", "country": "JP", "delta": "-1"},
+      {"rank": 7, "anilist_id": 178025, "title_en": "Dandadan", "title_romaji": "Dandadan", "score": 85, "popularity": 298120, "trending": 121, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-K6gPFL9eIZ2K.jpg", "url": "https://anilist.co/anime/178025", "country": "JP", "delta": "new"},
+      {"rank": 8, "anilist_id": 176496, "title_en": "Re:ZERO Season 3", "title_romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season", "score": 81, "popularity": 245100, "trending": 98, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176496-zUJUStUWzqHv.jpg", "url": "https://anilist.co/anime/176496", "country": "JP", "delta": "-2"},
+      {"rank": 9, "anilist_id": 170942, "title_en": "Blue Lock Season 2", "title_romaji": "Blue Lock vs. U-20 Japan", "score": 76, "popularity": 198000, "trending": 87, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170942-bjUlpFnrwBxd.jpg", "url": "https://anilist.co/anime/170942", "country": "JP", "delta": "0"},
+      {"rank": 10, "anilist_id": 177709, "title_en": "Wind Breaker Season 2", "title_romaji": "Wind Breaker Season 2", "score": 78, "popularity": 121000, "trending": 65, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177709-7HRXY2t1Bz5x.jpg", "url": "https://anilist.co/anime/177709", "country": "JP", "delta": "+1"}
+    ]
+  },
+  "regions": {
+    "japan": {
+      "label_ko": "일본", "label_en": "Japan",
+      "netflix": [
+        {"rank": 1, "title": "Solo Leveling Season 2", "anilist_id": 151807, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg", "url": "https://anilist.co/anime/151807", "delta": "+1"},
+        {"rank": 2, "title": "Dandadan", "anilist_id": 178025, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-K6gPFL9eIZ2K.jpg", "url": "https://anilist.co/anime/178025", "delta": "new"}
+      ],
+      "trends": [
+        {"rank": 1, "title": "ONE PIECE", "anilist_id": 21, "score": 100, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg"},
+        {"rank": 2, "title": "Frieren: Beyond Journey's End", "anilist_id": 154587, "score": 78.4, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-gpYz0sZHEUDb.jpg"},
+        {"rank": 3, "title": "Demon Slayer: Hashira Training Arc", "anilist_id": 163132, "score": 61.2, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163132-Bs1Es93Jm6e1.jpg"}
+      ]
+    },
+    "korea": {
+      "label_ko": "한국", "label_en": "Korea",
+      "netflix": [
+        {"rank": 1, "title": "Solo Leveling Season 2", "anilist_id": 151807, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg", "url": "https://anilist.co/anime/151807", "delta": "0"}
+      ],
+      "trends": [
+        {"rank": 1, "title": "Solo Leveling Season 2", "anilist_id": 151807, "score": 100, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg"},
+        {"rank": 2, "title": "ONE PIECE", "anilist_id": 21, "score": 64.8, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg"}
+      ]
+    },
+    "north_america": {
+      "label_ko": "북미", "label_en": "North America",
+      "netflix": [
+        {"rank": 1, "title": "Jujutsu Kaisen", "anilist_id": 166873, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-bbBWj4pEFseh.jpg", "url": "https://anilist.co/anime/113415", "delta": "+2"},
+        {"rank": 2, "title": "ONE PIECE", "anilist_id": 21, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg", "url": "https://anilist.co/anime/21", "delta": "-1"}
+      ],
+      "trends": [
+        {"rank": 1, "title": "Solo Leveling Season 2", "anilist_id": 151807, "score": 100, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg"},
+        {"rank": 2, "title": "Dandadan", "anilist_id": 178025, "score": 88.1, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178025-K6gPFL9eIZ2K.jpg"},
+        {"rank": 3, "title": "Jujutsu Kaisen", "anilist_id": 166873, "score": 70.5, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-bbBWj4pEFseh.jpg"}
+      ]
+    },
+    "europe": {
+      "label_ko": "유럽", "label_en": "Europe",
+      "netflix": [
+        {"rank": 1, "title": "ONE PIECE", "anilist_id": 21, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg", "url": "https://anilist.co/anime/21", "delta": "new"}
+      ],
+      "trends": [
+        {"rank": 1, "title": "ONE PIECE", "anilist_id": 21, "score": 100, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg"},
+        {"rank": 2, "title": "Solo Leveling Season 2", "anilist_id": 151807, "score": 82.3, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg"}
+      ]
+    },
+    "southeast_asia": {
+      "label_ko": "동남아", "label_en": "SE Asia",
+      "netflix": [],
+      "trends": [
+        {"rank": 1, "title": "Solo Leveling Season 2", "anilist_id": 151807, "score": 100, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-vbljVdotMGac.jpg"},
+        {"rank": 2, "title": "ONE PIECE", "anilist_id": 21, "score": 91.7, "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-tXMN3Y20PIL9.jpg"}
+      ]
+    }
+  },
+  "sources": {
+    "anilist": "https://anilist.co",
+    "netflix": "https://www.netflix.com/tudum/top10",
+    "trends": "https://trends.google.com"
+  },
+  "notes": "권역 실시청은 Netflix Top10 내 애니만 반영하며 카탈로그 한계로 누락이 있을 수 있습니다. (이 파일은 첫 배포용 샘플이며 매주 월요일 자동 갱신됩니다.)"
+}

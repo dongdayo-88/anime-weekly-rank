@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>글로벌 애니 주간 랭킹</title>
+  <meta name="description" content="매주 자동 갱신되는 글로벌 애니메이션 인기 랭킹 — AniList · Netflix · Google Trends 기반" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="title-block">
+        <h1>글로벌 애니 주간 랭킹</h1>
+        <p class="subtitle">AniList · Netflix Tudum · Google Trends</p>
+      </div>
+      <div class="updated" id="updated">최종 갱신: —</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 헤드라인: 글로벌 Top20 -->
+    <section class="section" id="global-section">
+      <div class="section-head">
+        <h2>글로벌 Top 20</h2>
+        <div class="toggle" id="sort-toggle" role="tablist" aria-label="정렬 기준">
+          <button class="toggle-btn active" data-sort="trending" role="tab">트렌딩</button>
+          <button class="toggle-btn" data-sort="popularity" role="tab">인기도</button>
+        </div>
+      </div>
+      <div class="global-grid" id="global-grid"><!-- JS 렌더 --></div>
+    </section>
+
+    <!-- 권역 탭 -->
+    <section class="section" id="region-section">
+      <div class="section-head">
+        <h2>권역별 랭킹</h2>
+      </div>
+      <div class="tabs" id="region-tabs" role="tablist" aria-label="권역"><!-- JS 렌더 --></div>
+      <div class="region-panel" id="region-panel"><!-- JS 렌더 --></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="sources" id="sources">데이터 출처: AniList · Netflix Tudum · Google Trends</p>
+    <p class="notes" id="notes"></p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

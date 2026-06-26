@@ -11,10 +11,16 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="title-block">
-        <h1>글로벌 애니 주간 랭킹</h1>
+        <h1 data-i18n="title">글로벌 애니 주간 랭킹</h1>
         <p class="subtitle">AniList · Netflix Tudum · Google Trends</p>
       </div>
-      <div class="updated" id="updated">최종 갱신: —</div>
+      <div class="header-right">
+        <div class="updated" id="updated">최종 갱신: —</div>
+        <div class="lang-toggle" id="lang-toggle" role="group" aria-label="언어 / 言語">
+          <button class="lang-btn active" data-lang="ko" type="button">한국어</button>
+          <button class="lang-btn" data-lang="ja" type="button">日本語</button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -23,13 +29,13 @@
     <div class="rank-block">
       <nav class="rank-nav" id="rank-nav" role="tablist" aria-label="랭킹 보기">
         <button class="rank-tab active" data-view="global" role="tab">
-          <span class="rank-tab-ic">🌐</span><span>글로벌 Top 20</span>
+          <span class="rank-tab-ic">🌐</span><span data-i18n="tab.global">글로벌 Top 20</span>
         </button>
         <button class="rank-tab" data-view="seasonal" role="tab">
-          <span class="rank-tab-ic">📺</span><span>이번 분기 방영작</span>
+          <span class="rank-tab-ic">📺</span><span data-i18n="tab.seasonal">이번 분기 방영작</span>
         </button>
         <button class="rank-tab" data-view="upcoming" role="tab">
-          <span class="rank-tab-ic">⏳</span><span>분기별 기대작</span>
+          <span class="rank-tab-ic">⏳</span><span data-i18n="tab.upcoming">분기별 기대작</span>
         </button>
       </nav>
 
@@ -37,16 +43,16 @@
         <!-- 글로벌 Top20 -->
         <section class="rank-view active" id="global-view" role="tabpanel">
           <div class="section-head">
-            <h2>글로벌 Top 20</h2>
+            <h2 data-i18n="h.global">글로벌 Top 20</h2>
             <div class="toggle" id="sort-toggle" role="tablist" aria-label="정렬 기준">
-              <button class="toggle-btn active" data-sort="trending" role="tab">트렌딩</button>
-              <button class="toggle-btn" data-sort="popularity" role="tab">인기도</button>
+              <button class="toggle-btn active" data-sort="trending" role="tab" data-i18n="sort.trending">트렌딩</button>
+              <button class="toggle-btn" data-sort="popularity" role="tab" data-i18n="sort.popularity">인기도</button>
             </div>
           </div>
           <p class="legend" aria-label="수치 설명">
-            <span><b class="ic">★</b> 평점 <em>AniList 평균점수 (100점 만점)</em></span>
-            <span><b class="ic">🔥</b> 트렌딩 <em>이번 주 화제성 지수</em></span>
-            <span><b class="ic">👥</b> 인기도 <em>작품을 등록한 이용자 수</em></span>
+            <span><b class="ic">★</b> <span data-i18n="lg.score">평점</span> <em data-i18n="lg.score.d">AniList 평균점수 (100점 만점)</em></span>
+            <span><b class="ic">🔥</b> <span data-i18n="lg.trending">트렌딩</span> <em data-i18n="lg.trending.d">이번 주 화제성 지수</em></span>
+            <span><b class="ic">👥</b> <span data-i18n="lg.popularity">인기도</span> <em data-i18n="lg.popularity.d">작품을 등록한 이용자 수</em></span>
           </p>
           <div class="global-grid" id="global-grid"><!-- JS 렌더 --></div>
         </section>
@@ -54,11 +60,11 @@
         <!-- 이번 분기 방영작 -->
         <section class="rank-view" id="seasonal-view" role="tabpanel" hidden>
           <div class="section-head">
-            <h2>이번 분기 방영작 <span class="season-label" id="season-label"></span></h2>
+            <h2><span data-i18n="h.seasonal">이번 분기 방영작</span> <span class="season-label" id="season-label"></span></h2>
             <div class="toggle" id="season-sort-toggle" role="tablist" aria-label="분기 정렬 기준">
-              <button class="toggle-btn active" data-sort="trending" role="tab">트렌딩</button>
-              <button class="toggle-btn" data-sort="popularity" role="tab">인기도</button>
-              <button class="toggle-btn" data-sort="score" role="tab">평점</button>
+              <button class="toggle-btn active" data-sort="trending" role="tab" data-i18n="sort.trending">트렌딩</button>
+              <button class="toggle-btn" data-sort="popularity" role="tab" data-i18n="sort.popularity">인기도</button>
+              <button class="toggle-btn" data-sort="score" role="tab" data-i18n="sort.score">평점</button>
             </div>
           </div>
           <div class="global-grid" id="seasonal-grid"><!-- JS 렌더 --></div>
@@ -67,17 +73,17 @@
         <!-- 분기별 기대작 -->
         <section class="rank-view" id="upcoming-view" role="tabpanel" hidden>
           <div class="section-head">
-            <h2>분기별 기대작 <span class="season-label" id="upcoming-label"></span></h2>
+            <h2><span data-i18n="h.upcoming">분기별 기대작</span> <span class="season-label" id="upcoming-label"></span></h2>
             <div class="toggle" id="upcoming-sort-toggle" role="tablist" aria-label="기대작 정렬 기준">
-              <button class="toggle-btn active" data-sort="popularity" role="tab">기대지수</button>
-              <button class="toggle-btn" data-sort="trending" role="tab">화제성</button>
-              <button class="toggle-btn" data-sort="favourites" role="tab">즐겨찾기</button>
+              <button class="toggle-btn active" data-sort="popularity" role="tab" data-i18n="usort.popularity">기대지수</button>
+              <button class="toggle-btn" data-sort="trending" role="tab" data-i18n="usort.trending">화제성</button>
+              <button class="toggle-btn" data-sort="favourites" role="tab" data-i18n="usort.favourites">즐겨찾기</button>
             </div>
           </div>
           <p class="legend" aria-label="수치 설명">
-            <span><b class="ic">👥</b> 기대지수 <em>작품을 등록한(기다리는) 이용자 수</em></span>
-            <span><b class="ic">🔥</b> 화제성 <em>최근 PV·뉴스 반응</em></span>
-            <span><b class="ic">♥</b> 즐겨찾기 <em>즐겨찾기에 추가한 이용자 수</em></span>
+            <span><b class="ic">👥</b> <span data-i18n="ulg.anticipation">기대지수</span> <em data-i18n="ulg.anticipation.d">작품을 등록한(기다리는) 이용자 수</em></span>
+            <span><b class="ic">🔥</b> <span data-i18n="ulg.buzz">화제성</span> <em data-i18n="ulg.buzz.d">최근 PV·뉴스 반응</em></span>
+            <span><b class="ic">♥</b> <span data-i18n="ulg.fav">즐겨찾기</span> <em data-i18n="ulg.fav.d">즐겨찾기에 추가한 이용자 수</em></span>
           </p>
           <div class="chips" id="upcoming-chips"><!-- JS 렌더 (분기 선택) --></div>
           <div class="global-grid" id="upcoming-grid"><!-- JS 렌더 --></div>
@@ -88,7 +94,7 @@
     <!-- 권역 탭 -->
     <section class="section" id="region-section">
       <div class="section-head">
-        <h2>권역별 랭킹</h2>
+        <h2 data-i18n="h.region">권역별 랭킹</h2>
       </div>
       <div class="tabs" id="region-tabs" role="tablist" aria-label="권역"><!-- JS 렌더 --></div>
       <div class="region-panel" id="region-panel"><!-- JS 렌더 --></div>

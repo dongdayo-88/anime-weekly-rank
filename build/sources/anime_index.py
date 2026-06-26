@@ -12,6 +12,11 @@ try:
 except Exception:  # noqa: BLE001
     _HAS_RAPIDFUZZ = False
 
+
+def norm(s) -> str:
+    """공통 정규화: 영숫자만 남기고 소문자화."""
+    return re.sub(r"[^a-z0-9]", "", str(s).lower())
+
 # manami DB 는 더 이상 repo 트리에 커밋되지 않고 GitHub Releases 로 배포된다.
 # 아래 'releases/latest/download/...' 영구 링크는 항상 최신 릴리스로 리다이렉트된다.
 # (requests 는 기본적으로 리다이렉트를 따라간다 → allow_redirects 별도 처리 불필요)
@@ -28,10 +33,19 @@ FUZZ_THRESHOLD = 90    # 퍼지 매칭 최소 점수
 MIN_FUZZY_LEN = 6      # 이 길이 미만의 짧은 제목은 fuzzy 금지(정확매칭만 허용)
 FUZZ_LEN_RATIO = 0.82  # 후보와의 길이비율 하한 — 부분/짧은 충돌 차단
 
-
-def norm(s) -> str:
-    """공통 정규화: 영숫자만 남기고 소문자화."""
-    return re.sub(r"[^a-z0-9]", "", str(s).lower())
+# 동명(同名) 충돌 차단 목록 (운영 튜닝 — §13).
+# 넷플릭스의 비(非)애니 작품이 우연히 같은 제목의 무명 애니와 이름이 겹쳐
+# 오탐되는 경우. 정규화(norm) 키로 비교한다. 새 충돌이 보이면 여기에 추가.
+NON_ANIME_BLOCKLIST = {
+    norm(t) for t in (
+        "My Family",        # 영국 시트콤
+        "The Four Seasons",  # 넷플릭스 드라마(2025)
+        "Legends",
+        "In Love Forever",
+        "Spectre",           # 007 영화
+        "Vacation", "Turbo", "Sonic the Hedgehog 3",
+    )
+}
 
 
 def _download_manami():
@@ -118,17 +132,15 @@ class AnimeIndex:
         return lr >= FUZZ_LEN_RATIO
 
     def is_anime(self, title) -> bool:
+        # 정규화 정확 매칭만 사용한다(고정밀).
+        # manami 사전이 모든 동의어(현지화/번역 제목 포함)를 담고 있어 정확매칭만으로도
+        # 재현율이 충분하다. 반면 152k 사전에 대한 fuzzy 매칭은 일반 단어 제목
+        # ("Legends", "My Family", "The Four Seasons" 등 비애니 TV쇼)을 오탐으로
+        # 끌어들여 정밀도를 크게 떨어뜨린다 → fuzzy 게이트는 쓰지 않는다(§13 튜닝).
         n = norm(title)
-        if not n:
+        if not n or n in NON_ANIME_BLOCKLIST:
             return False
-        if n in self.title_set:           # 1차: 정규화 정확 매칭 (고정밀)
-            return True
-        # 2차: 퍼지 — 짧은 제목은 제외(일반 단어 오탐 방지) + 길이비율 가드
-        if _HAS_RAPIDFUZZ and self.norm_list and len(n) >= MIN_FUZZY_LEN:
-            match = process.extractOne(n, self.norm_list, scorer=fuzz.ratio)
-            if match and self._fuzzy_ok(n, match[0], match[1]):
-                return True
-        return False
+        return n in self.title_set
 
     def lookup_meta(self, title):
         """매칭된 제목을 AniList 메타에 연결. 실패 시 None."""
